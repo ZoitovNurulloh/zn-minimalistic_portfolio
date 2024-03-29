@@ -1,4 +1,15 @@
 /* CUSTOM PROPS */
+:root {
+  --green:#5FB4A2;
+  --dark-blue:#203A4C;
+  --grey-blue:#33323D;
+  --light-grey:#fafafa;
+  --grey:#eaeaeb;
+  --red:#F43030;
+
+  --accent-font-family:'Ibarra Real Nova', 'Times New Roman', sans-serif;
+  --body-font-family: 'Public Sans', 'Arial', sans-serif;
+}
 
 /* FONTS */
 @font-face {
@@ -29,6 +40,9 @@
 }
 
 
+
+
+
 /* GLOBAL */
 
 html {
@@ -48,10 +62,10 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
+  color: var(--grey-blue);
+  font-family: var(--body-font-family);
   font-size: 16px;
-  line-height: 1.5;
+  line-height:30px;
   padding: 0;
   margin: 0;
 }
@@ -65,9 +79,9 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1158px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
 }
