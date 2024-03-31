@@ -291,6 +291,7 @@ only screen and (                min-resolution: 2dppx) {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+  
   .site-footer__container {
     flex-direction: row;
   }
