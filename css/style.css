@@ -306,6 +306,12 @@ input:-webkit-autofill:focus {
 }
 
 
+/* IMG-TEXT-INFO-LIST */
+
+.img-text-info-list__item:not(:last-child) {
+  margin-bottom: 72px;
+}
+
 
 /* SITE_HEADER */
 
@@ -391,6 +397,10 @@ input:-webkit-autofill:focus {
   padding-top: 115px;
   padding-bottom: 80px;
   text-align: center;
+}
+
+.contact-cta--portfolio-index {
+  padding-top: 80px;
 }
 
 .contact-cta__container {
@@ -599,6 +609,10 @@ only screen and (                min-resolution: 2dppx) {
 
   .hero__heading {
     margin-bottom: 48px;
+  }
+
+  .img-text-info-list__item:not(:last-child) {
+    margin-bottom: 80px;
   }
 
   .img-text-info__picture {
