@@ -246,6 +246,7 @@ input:-webkit-autofill:focus {
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .button:hover {
@@ -381,6 +382,29 @@ input:-webkit-autofill:focus {
   font-size: 40px;
   line-height: 1.05;
   letter-spacing: -0.357;
+}
+
+
+/* CONTACT-CTA */
+
+.contact-cta {
+  padding-top: 115px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.contact-cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-cta__heading {
+  margin-bottom: 40px;
+  font-family: var(--accent-font-family);
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357px;
 }
 
 
@@ -607,6 +631,31 @@ only screen and (                min-resolution: 2dppx) {
     margin-left: 0;
     margin-right: 69px;
   }
+
+  .contact-cta {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .contact-cta__container {
+    flex-direction: row;
+  }
+  .contact-cta__container::before {
+    content:"";
+    width: 113px;
+    height: 1px;
+    flex-grow: 1;
+    margin-right: 32px;
+    margin-left: 32px;
+    background-color: rgba(51,50,61,0.15);
+
+  }
+  .contact-cta__heading {
+    width: 100%;
+    order: -1;
+    max-width: 350px;
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -666,5 +715,10 @@ only screen and (                min-resolution: 2dppx) {
   .img-text-info__description {
     font-size: 16px;
     line-height: 30px;
+  }
+
+  .contact-cta {
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
