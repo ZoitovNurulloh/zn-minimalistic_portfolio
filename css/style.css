@@ -435,7 +435,12 @@ input:-webkit-autofill:focus {
 }
 
 
-/* PROJECT-HERO */
+/* PROJECT-META */
+
+.project-meta-details {
+  margin-bottom: 64px;
+}
+
 
 .project-meta-details__meta {
   margin-bottom: 48px;
@@ -510,6 +515,66 @@ input:-webkit-autofill:focus {
 .static-previews__img {
   display: block;
   width: 100%;
+}
+
+
+/* PAGE-CONTROLS */
+
+.page-controls__inner {
+  border-top: 1px solid rgba(51,50,61,0.15);
+  border-bottom: 1px solid rgba(51,50,61,0.15);
+  display: flex;
+}
+
+.page-controls__inner::before {
+  display: block;
+  width: 1px;
+  background-color: rgba(51,50,61,0.15);
+  content: "";
+}
+
+.page-controls__link {
+  flex-grow: 1;
+  display: grid;
+  padding: 24px;
+  color: var(--grey-blue);
+}
+
+.page-controls__link:hover {
+  color:var(--green);
+}
+
+.page-controls__link:active {
+  opacity: 0.6;
+}
+
+.page-controls__link--prev {
+  order: -1;
+  padding-left: 0;
+}
+
+.page-controls__link--next {
+  padding-right: 0;
+  justify-items: end;
+}
+
+.page-controls__icon {
+  margin-bottom: 16px;
+  width: 8px;
+  height: 16px;
+}
+
+.page-controls__text {
+  order: 1;
+  color:rgba(51,50,61, 0.5);
+  text-transform: capitalize;
+}
+
+.page-controls__title {
+  font-family: var(--accent-font-family);
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.286px;
 }
 
 
@@ -786,6 +851,10 @@ only screen and (                min-resolution: 2dppx) {
     height: 310px;
   }
 
+  .project-meta-details {
+    margin-bottom: 80px;
+  }
+
   .project-meta-details__meta {
     margin-bottom: 40px;
   }
@@ -812,6 +881,41 @@ only screen and (                min-resolution: 2dppx) {
   .project-meta__tags {
     margin-bottom: 0;
   }
+
+  .page-controls__link {
+    padding: 32px;
+    align-items: center;
+    gap: 0 32px;
+    grid-template-rows: auto auto;
+  }
+
+  .page-controls__link--prev {
+    grid-template-columns: auto 1fr;
+    padding-left: 0;
+  }
+
+  .page-controls__link--next {
+    padding-right: 0;
+  }
+
+  .page-controls__icon {
+    grid-row: span 2;
+    margin-bottom: 0;
+  }
+
+  .page-controls__link--prev .page-controls__text {
+    grid-column: 2;
+  }
+
+  .page-controls__link--next  {
+    grid-template-columns: 1fr auto;
+  }
+
+  .page-controls__link--next .page-controls__icon  {
+    grid-column: 2;
+    grid-row: 1 / -1;
+  }
+
 }
 
 @media only screen and (min-width: 900px) {
@@ -891,6 +995,10 @@ only screen and (                min-resolution: 2dppx) {
   .contact-cta {
     padding-top: 150px;
     padding-bottom: 150px;
+  }
+
+  .project-meta-details {
+    margin-bottom: 64px;
   }
 
   .project-meta-details__container {
