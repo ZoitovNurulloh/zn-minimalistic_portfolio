@@ -604,6 +604,10 @@ input:-webkit-autofill:focus {
   align-items: center;
 }
 
+.socials--dark .socials__link {
+  color:var(--grey-blue);
+}
+
 .socials__item:not(:last-child) {
   margin-right: 16px;
 }
